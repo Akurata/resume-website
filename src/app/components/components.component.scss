@@ -1,0 +1,22 @@
+
+.my-face {
+  background-color: transparent;
+  max-width: 35%;
+  border: 3px solid rgba(0,0,0,0.7)
+}
+
+.presentation-title, .my-face {
+  filter: drop-shadow(-14px 26px 15px rgba(0,0,0,0.8));
+}
+
+.presentation-subtitle {
+  margin-top: 50px;
+}
+
+.content-center {
+  z-index: 2 !important;
+}
+
+ngb-progressbar {
+    margin-top: 5rem;
+}
