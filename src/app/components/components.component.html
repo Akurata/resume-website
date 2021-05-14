@@ -1,118 +1,12 @@
 <div class="wrapper">
-    <div class="page-header section-dark" style="background-image: url('assets/img/login-image.jpg')">
-        <div class="filter"></div>
-        <div class="content-center">
-            <div class="container">
-                <div class="title-brand">
-                    <div class="avatar">
-                        <img src="assets/img/IMG_4356.png" alt="Circle Image" class="my-face img-circle img-no-padding img-responsive">
-                    </div>
-                    <h1 class="presentation-title">Alex Kurata</h1>
-                    <div class="fog-low">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                    <div class="fog-low right">
-                        <img src="assets/img/fog-low.png" alt="">
-                    </div>
-                </div>
-                <div class="presentation-subtitle text-center">
-                  <div class="row">
-                    <div class="col">
-                      <a type="button" (click)="scrollTo(ExperiencesSection)" class="btn btn-outline-primary btn-lg">Experiences</a>
-                    </div>
-                    <div class="col">
-                      <a type="button" (click)="scrollTo(SkillsSection)" class="btn btn-outline-success btn-lg">Skills</a>
-                    </div>
-                    <div class="col">
-                      <a type="button" (click)="scrollTo(DemosSection)" class="btn btn-outline-info btn-lg">Demos</a>
-                    </div>
-                  </div>
-                </div>
-            </div>
-        </div>
-        <div class="moving-clouds" style="background-image: url('assets/img/clouds.png'); "></div>
-    </div>
-    <div class="main">
+  <canvas class="particle-background"></canvas>
 
-      <div #ExperiencesSection class="section section-dark text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 mr-auto ml-auto">
-                    <h2 class="title">Experiences</h2>
-                    <h5 class="description"></h5>
-                </div>
-            </div>
-            <br/><br/>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-album-2"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">Beautiful Gallery</h4>
-                            <p class="description">Spend your time generating new ideas. You don't have to think of implementing.</p>
-                            <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-bulb-63"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">New Ideas</h4>
-                            <p>Larger, yet dramatically thinner. More powerful, but remarkably power efficient.</p>
-                            <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-chart-bar-32"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">Statistics</h4>
-                            <p>Choose from a veriety of many colors resembling sugar paper pastels.</p>
-                            <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="info">
-                        <div class="icon icon-danger">
-                            <i class="nc-icon nc-sun-fog-29"></i>
-                        </div>
-                        <div class="description">
-                            <h4 class="info-title">Delightful design</h4>
-                            <p>Find unique and handmade delightful designs related items directly from our sellers.</p>
-                            <a href="#pkp" class="btn btn-link btn-danger">See more</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <lead-section></lead-section>
 
-        </div>
-      </div>
-
-      <div #SkillsSection class="section">
-        <div class="container">
-          <div class="tim-title">
-              <h2>Skills</h2>
-          </div>
-        </div>
-      </div>
-
-      <div #DemosSection class="section section-default">
-        <div class="container">
-          <div class="tim-title">
-              <h2>Demos</h2>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
+  <div class="main">
+    <aboutme-section></aboutme-section>
+    <skills-section></skills-section>
+    <experience-section></experience-section>
+    <demos-section></demos-section>
+  </div>
 </div>

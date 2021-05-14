@@ -1,8 +1,35 @@
-<footer class="footer">
+<footer class="footer section-dark transparent-background">
     <div class="container">
-        <div class="row">
-            <nav class="footer-nav">
-            </nav>
+      <nav class="footer-nav footer-flex">
+        <ul class="footer-col-1">
+          <li class="text-left">
+            <a class="nav-link" type="button" (click)="scroller.scrollTo('AboutMeSection')">About Me</a>
+            <a class="nav-link" type="button" (click)="scroller.scrollTo('SkillsSection')">Skills</a>
+            <a class="nav-link" type="button" (click)="scroller.scrollTo('ExperiencesSection')">Experiences</a>
+            <a class="nav-link" type="button" (click)="scroller.scrollTo('DemosSection')">Demos</a>
+          </li>
+        </ul>
+        <ul class="footer-col-2">
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="GitHub" data-placement="bottom" href="https://www.github.com/Akurata" target="_blank">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a class="nav-link" rel="tooltip" title="Download Resume" data-placement="bottom" href="https://alexkurata.com/resume" target="_blank">
+              <i class="fa fa-download"></i> Resume
+            </a>
+          </li>
+        </ul>
+        <div class="credits ml-auto footer-col-3">
+          <p class="text-right">
+            Alex Kurata <br/>
+            (203) 214-3333 <br/>
+            akurata100@gmail.com
+          </p>
         </div>
+      </nav>
+
+
+
+
     </div>
 </footer>

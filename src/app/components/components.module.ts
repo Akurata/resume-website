@@ -15,6 +15,12 @@ import { NotificationComponent } from './notification/notification.component';
 import { NgbdModalComponent } from './modal/modal.component';
 import { NgbdModalContent } from './modal/modal.component';
 
+import { LeadComponent } from './sections/lead/lead.component';
+import { ExperiencesComponent } from './sections/experiences/experiences.component';
+import { AboutMeComponent } from './sections/aboutme/aboutme.component';
+import { DemosComponent } from './sections/demos/demos.component';
+import { SkillsComponent } from './sections/skills/skills.component';
+
 @NgModule({
     imports: [
         CommonModule,
@@ -32,7 +38,13 @@ import { NgbdModalContent } from './modal/modal.component';
         NucleoiconsComponent,
         NotificationComponent,
         NgbdModalComponent,
-        NgbdModalContent
+        NgbdModalContent,
+
+        LeadComponent,
+        ExperiencesComponent,
+        AboutMeComponent,
+        DemosComponent,
+        SkillsComponent
     ],
     entryComponents: [NgbdModalContent],
     exports:[ ComponentsComponent ]

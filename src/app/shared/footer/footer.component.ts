@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ScrollTo } from '../scrollto';
 
 @Component({
     selector: 'app-footer',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class FooterComponent implements OnInit {
     test : Date = new Date();
 
-    constructor() { }
+    constructor(private scroller: ScrollTo) { }
 
     ngOnInit() {}
 }

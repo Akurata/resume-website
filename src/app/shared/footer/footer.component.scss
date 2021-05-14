@@ -1,0 +1,26 @@
+
+.footer-flex {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-weight: 600;
+}
+
+@media (max-width: 767px) {
+  .footer-flex {
+    flex-wrap: wrap-reverse;
+
+    .footer-col-1 {
+      flex-grow: 1;
+    }
+    .footer-col-2 {
+      flex-grow: 1;
+    }
+    .footer-col-3 {
+      flex-grow: 3;
+    }
+  }
+
+}

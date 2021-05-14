@@ -1,0 +1,40 @@
+
+.my-face {
+  background-color: transparent;
+  max-width: 35%;
+  border: 3px solid rgba(0,0,0,0.7)
+}
+
+.presentation-title, .my-face {
+  filter: drop-shadow(-14px 26px 15px rgba(0,0,0,0.8));
+}
+
+.presentation-subtitle {
+  h4 {
+    margin-top: 1rem;
+  }
+  p {
+    font-weight: 500;
+  }
+}
+
+.content-center {
+  z-index: 2 !important;
+}
+
+.main-btn-row {
+  div {
+    a {
+      text-align: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .presentation-title {
+    font-size: 3rem;
+  }
+
+}

@@ -11,3 +11,19 @@ nav {
   color: #2ba9cd;
   text-decoration: none;
 }
+
+
+@media screen and (max-width: 991px) {
+  .navbar-collapse {
+    border-left: 1px solid #2c2820;
+
+    ul {
+      height: auto;
+    }
+  }
+
+  .navbar-collapse::after {
+    background-color: #000 !important;
+  }
+
+}
