@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { EXPERIENCE_LIST } from './experience-list';
+import { SKILLS_LIST } from '../skills/skills-list';
 
 @Component({
     selector: 'experience-section',
@@ -8,13 +10,8 @@ import { Component } from '@angular/core';
 })
 export class ExperiencesComponent {
 
-  companyName: string = '';
-  jobTitle: string = '';
-  startDate: string = '';
-  endDate: string = '';
-  description: string = '';
-
-  tags: string[] = [];
+  experiences = EXPERIENCE_LIST;
+  skillKey = SKILLS_LIST;
 
   constructor() {}
 }

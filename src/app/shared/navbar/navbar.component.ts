@@ -13,8 +13,8 @@ export class NavbarComponent implements OnInit {
 
     constructor(
       public location: Location,
-      private element : ElementRef,
-      private scroller: ScrollTo
+      public scroller: ScrollTo,
+      private element : ElementRef
     ) {
       this.sidebarVisible = false;
     }

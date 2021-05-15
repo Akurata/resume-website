@@ -8,5 +8,5 @@ import { ScrollTo } from '../../../shared/scrollto';
 })
 export class LeadComponent {
 
-  constructor(private scroller: ScrollTo) {}
+  constructor(public scroller: ScrollTo) {}
 }

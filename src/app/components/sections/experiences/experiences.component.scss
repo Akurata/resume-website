@@ -1,0 +1,86 @@
+
+.even-card {
+  text-align: left;
+  order: 1;
+}
+
+.odd-card {
+  text-align: right;
+  order: 2;
+
+  .job-tags {
+    justify-content: flex-end;
+  }
+
+  p.description {
+    text-align: left;
+  }
+}
+
+.job-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  .skill-tag {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
+
+.exp-timeline {
+  position: relative;
+  justify-content: space-around;
+  align-items: center;
+
+  .row {
+    width: 100%;
+  }
+
+  .exp-separator {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: #f5593d;
+    z-index: 2;
+  }
+}
+
+
+.job-logo-img {
+  background: transparent;
+  img {
+    // max-width: 150px;
+    max-height: 100px;
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.7));
+  }
+}
+
+
+
+
+
+@media (max-width: 500px) {
+  .odd-card, .even-card {
+    text-align: left;
+
+    .job-tags {
+      justify-content: flex-start;
+    }
+  }
+
+  .exp-timeline {
+    .exp-separator {
+      visibility: hidden;
+    }
+    .exp-container {
+      margin-bottom: 3rem;
+    }
+    div:last-of-type .exp-container {
+      margin-bottom: 0px;
+    }
+  }
+}

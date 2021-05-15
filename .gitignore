@@ -65,3 +65,5 @@ mail.log
 
 **/sessions/*
 **/.env
+
+bucket.sh

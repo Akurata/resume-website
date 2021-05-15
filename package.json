@@ -8,8 +8,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "./node_modules/@angular/cli/bin/ng serve",
+    "build": "ng build --configuration production",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -35,12 +35,13 @@
     "core-js": "3.8.1",
     "jquery": "3.5.1",
     "jw-bootstrap-switch-ng2": "2.0.5",
+    "ng-particles": "^2.10.0",
     "ng2-nouislider": "1.8.2",
     "nouislider": "14.6.3",
-    "particlesjs": "^2.2.3",
     "popper.js": "1.16.1",
     "rxjs": "6.6.3",
     "rxjs-compat": "6.6.3",
+    "tsparticles": "^1.27.0",
     "zone.js": "0.11.3"
   },
   "devDependencies": {

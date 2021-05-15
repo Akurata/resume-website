@@ -13,6 +13,7 @@ import { ComponentsModule } from './components/components.module';
 // import { ExamplesModule } from './examples/examples.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

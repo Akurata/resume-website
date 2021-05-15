@@ -7,10 +7,21 @@ html, body {
 }
 body {
   position: relative;
-  // background-color: #f3f2f2 !important;
   background-color: #000 !important;
+  // background: url('assets/img/invisible.png');
 }
 
 .transparent-background {
-  background: rgba(0,0,0,0) !important;
+  background-color: transparent !important;
+}
+.transparent-background::after {
+  // background: rgba(0,0,0,0) !important;
+  background: url('assets/img/invisible.png') !important;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }

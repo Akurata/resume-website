@@ -9,7 +9,7 @@ import { ScrollTo } from '../scrollto';
 export class FooterComponent implements OnInit {
     test : Date = new Date();
 
-    constructor(private scroller: ScrollTo) { }
+    constructor(public scroller: ScrollTo) { }
 
     ngOnInit() {}
 }

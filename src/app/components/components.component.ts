@@ -2,9 +2,7 @@ import { ViewportScroller } from '@angular/common';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
-
-declare const Particles;
-
+import { PARTICLES } from './particle.config';
 
 @Component({
     selector: 'app-components',
@@ -19,6 +17,8 @@ export class ComponentsComponent implements OnInit {
     focus2;
     date: {year: number, month: number};
     model: NgbDateStruct;
+
+    particlesOptions = PARTICLES.space;
 
     constructor(
       private renderer : Renderer2,
@@ -48,15 +48,7 @@ export class ComponentsComponent implements OnInit {
 
 
       // Initalize particles background
-      Particles.init({
-        selector: '.particle-background',
-        color: ['#595959', '#333333', '#737373'],
-        maxParticles: 125,
-        minDistance: 400,
-        sizeVariations: 2,
-        speed: 0.05,
-        connectParticles: true
-      });
+
     }
 
 }
