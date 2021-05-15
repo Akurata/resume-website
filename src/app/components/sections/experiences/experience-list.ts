@@ -54,7 +54,7 @@ export const EXPERIENCE_LIST: Experience[] = [
       After my Summer internship with Zentific wrapped up, I was able to land an interview in my college's Web Services department. Contrast to my experiences with Zentific, I was working on a team that fluctuated in size, between 7 and 15 people.
       `,
       `
-      One of the nice things about working for Marist was the variety in the projects. I contributed bits and pieces to many different projects and it was always exciting to see what everyone was working on. I got the chance to work on several campus utility apps, mostly for staff to micromanage various extraneous tools around campus like fire extinguishers, lights on the football field, or sprinklers. I designed an Alex Skill for the college.
+      One of the nice things about working for Marist was the variety in the projects. I contributed bits and pieces to many different projects and it was always exciting to see what everyone was working on. I got the chance to work on several campus utility apps, mostly for staff to micromanage various extraneous tools around campus like fire extinguishers, lights on the football field, or sprinklers. I designed an Alexa Skill for the college.
       `,
       `
       The bulk of the work revolved around the college's website. My team worked on migrating all of the content from the previous iteration of the website to a new Liferay server, which was supposed to make it easier for widespread content management with the various clubs, faculty, and staff. We also worked on responding to tickets for abnormalities and bug fixes.
