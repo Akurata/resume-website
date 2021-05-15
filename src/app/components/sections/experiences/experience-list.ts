@@ -51,10 +51,20 @@ export const EXPERIENCE_LIST: Experience[] = [
     endDate: 'May 2019',
     description: [
       `
-      After my Summer internship with Zentific wrapped up, I was able to land an interview in my college's Web Services department. Contrast to my experiences with Zentific, I was working on a team that fluctuated in size, between 7 and 15 people.
+      After my Summer internship with Zentific wrapped up, I was able to land
+      an interview in my college's Web Services department. Contrast to my
+      experiences with Zentific, I was working on a team that fluctuated in size,
+      between 7 and 15 people.
       `,
       `
-      One of the nice things about working for Marist was the variety in the projects. I contributed bits and pieces to many different projects and it was always exciting to see what everyone was working on. I got the chance to work on several campus utility apps, mostly for staff to micromanage various extraneous tools around campus like fire extinguishers, lights on the football field, or sprinklers. I designed an Alexa Skill for the college.
+      One of the nice things about working for Marist was the variety in the
+      projects. I contributed bits and pieces to many different projects and it
+      was always exciting to see what everyone was working on. I got the chance
+      to work on several campus utility apps, mostly for staff to micromanage
+      various extraneous tools around campus like fire extinguishers, lights
+      on the football field, or sprinklers. I designed an Alexa Skill with a neat
+      OAuth hook back to the college's CAS, but didn't get the chance to
+      implement it.
       `,
       `
       The bulk of the work revolved around the college's website. My team worked on migrating all of the content from the previous iteration of the website to a new Liferay server, which was supposed to make it easier for widespread content management with the various clubs, faculty, and staff. We also worked on responding to tickets for abnormalities and bug fixes.
@@ -154,16 +164,42 @@ export const EXPERIENCE_LIST: Experience[] = [
     endDate: 'May 2020',
     description: [
       `
-      In college, I tried to take the opportunity to apply for a research grant. I didn't receive the grant, but a professor I had sought help with on drafting my proposal had offered me a research assistant and development role on a similar project he had begun designing.
+      In college, I tried to take the opportunity to apply for a research grant.
+      I didn't receive the grant, but a professor I had sought help with on drafting
+      my proposal had offered me a position as a research assistant and developer
+      for a similar project he had been designing.
       `,
       `
-      The project as a whole is one of the more badass things I've worked on. By using natural language processing and semantic analysis algorithms, parts of speech can be categorized and even abstracted into easily comparable data structures. From this we can compare pieces of text to other like sentiments, building a means for identifying intentionally misleading or otherwise deceptive statements. We used these algorithmic concepts to create models from digitally published news articles, in an attempt to find "fake news".
+      The project as a whole is one of the more badass things I've worked on.
+      By using natural language processing and semantic analysis algorithms,
+      parts of speech can be categorized and even abstracted into easily
+      comparable data structures. From this we can compare pieces of text to
+      other like sentiments, building a means for identifying intentionally
+      misleading or otherwise deceptive statements. We used these algorithmic
+      concepts to create models from digitally published news articles, in an
+      attempt to find "fake news".
       `,
       `
-      My knowledge of the subject matter was not up to the same standard as my professor, but it was an extraordinary experience to dive into all of the research to try and wrap my head around the whole thing. I was able to contribute to the project by creating a full-stack interface for interacting with this pile of algorithms as a service. I stood up a Flask API and a custom bootstrap frontend. The API had to host various modules for interacting with algorithms we wrote and to automatically batch process scraped news articles. The tricky part was configuring a Postgres database to reliably handle a lot of transactions. All of this was containerized in Docker and deployed on Google Cloud.
+      At the time, my knowledge of the subject matter was barely surface level.
+      It was an extraordinary experience to dive into all of the research to try
+      and wrap my head around what was even being accomplished. To feel so stumped
+      at times was honestly exciting. But with time, and a lot of help from my professor,
+      it started to click.
       `,
       `
-      This project meant a lot to me. It was the first time I felt confident about my abilities to make a solid product. It pushed me to do my research and ultimately showing me I have a lot to learn.
+      I was able to contribute to the
+      project by creating a full-stack interface for interacting with this pile
+      of algorithms as a service. I stood up a Flask API and a custom bootstrap
+      frontend. The API had to host various modules for strategically invoking different
+      algorithms we wrote and to automatically batch process scraped news articles.
+      The tricky part was configuring a Postgres database to reliably handle a
+      lot of transactions. All of this was containerized in Docker and deployed on
+      Google Cloud.
+      `,
+      `
+      This project meant a lot to me. It was the first time I felt confident
+      about my abilities to make a solid product.
+      It pushed me to do my research and ultimately showing me I have a lot to learn.
       `
     ],
     logo: 'assets/img/maristlogo.png',
@@ -179,22 +215,46 @@ export const EXPERIENCE_LIST: Experience[] = [
     ]
   },
   {
-    companyName: 'Brandoncopeland.com',
+    companyName: 'Copeland Media',
     jobTitle: 'Full Stack Developer',
     startDate: 'July 2020',
     endDate: 'October 2020',
     description: [
       `
-      I was approached by a friend and project manager I previously worked with, he asked to do some consulting with him for a client, possibly designing something. After learning that his client is Brandon Copeland; a patriots player and offseason Penn State professor, I was elated at the opportunity to work for him.
+      I was approached by two friends of mine, a grapic designer and project
+      manager that I've previously worked with. They asked for some help
+      consulting with a client, possibly designing something.
+      After learning that his client is Brandon Copeland, a Patriot's
+      player and offseason Penn State professor, I was elated at the opportunity
+      to work for him.
       `,
       `
-      After meeting with Brandon and his brother, Chad where they described a platform for Brandon to publish e-courses, interact with users, and market speaking engagements. We assessed the technical ambitions of a new product that they want to make and laid out the limitations and requirements for such a platform.
+      We met with Brandon and his brother, Chad where they described a
+      platform for Brandon to publish e-courses, interact with users, and market
+      speaking engagements. We assessed the technical ambitions of a new product
+      that they want to make and laid out the limitations and requirements for
+      such a platform.
       `,
       `
-      We took note of the large scope of the project, so we carefully began the iterative process of documenting and designing an appropriate scale to cost/benefit analysis. To proactively begin working up to that software goal, the brothers had set, my team began redesigning and upgrading Brandon's website and social media.
+      We took note of the large scope of the project, so we carefully began
+      the iterative process of documenting and designing an appropriate scale
+      to cost/benefit analysis. To proactively begin working up to that
+      software goal that the brothers had set, my team began redesigning
+      and upgrading Brandon's website and social media.
       `,
       `
-      Over the next few months, we met with Brandon and his brother Chad, where we designed, built, and implemented a new Angular frontend with a foundational backend API for building out user interaction. I deployed this site with my usual recipe: Take an even blend of docker containers (1 part API, 1 part DB), beat in 1 reverse proxy using Nginx, season with LetsEncrypt to taste, and served on a Google Cloud VM.
+      Over the next few months, I worked on setting up the proper infrastructure
+      to guarentee the website's success with my project manager, while the graphic
+      designer provided us with art assets. We regularly met with Brandon and Chad
+      to continue to imporove on the frontend design.
+      I deployed this site with my usual recipe:
+      Take an even blend of docker containers (1 part API, 1 part DB),
+      beat in 1 reverse proxy using Nginx, season with LetsEncrypt to taste,
+      and served on a Google Cloud VM.
+      `,
+      `
+      Shortly after I was able to get Brandon's website deployed, he went on to
+      be featured in the Forbes 40 under 40.
       `
     ],
     logo: 'assets/img/brandonlogo.png',
