@@ -29,7 +29,7 @@ spec:
               app: resume
       containers:
         - name: resume
-          image: trow.capitl.io/alex-resume-website:latest
+          image: registry.alexkurata.com/alex-resume-website:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 80
