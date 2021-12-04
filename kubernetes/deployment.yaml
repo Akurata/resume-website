@@ -16,6 +16,10 @@ spec:
       labels:
         app: resume
     spec:
+      nodeSelector:
+        kubernetes.io/arch: amd64
+      imagePullSecrets:
+        - name: docker-login
       topologySpreadConstraints:
         - maxSkew: 1
           topologyKey: kubernetes.io/hostname
