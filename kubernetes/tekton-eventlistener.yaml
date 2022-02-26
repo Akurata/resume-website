@@ -8,7 +8,7 @@ spec:
   - name: github-listener
     interceptors:
     - github:
-      eventTypes: ["push"]
+        eventTypes: ["push"]
     template:
       spec:
         resourceTemplates:
