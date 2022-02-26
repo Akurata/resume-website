@@ -1,0 +1,43 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: resume-git-event
+spec:
+  serviceAccountName: pipeline-account
+  triggers:
+  - name: github-listener
+    interceptors:
+    - github:
+      eventTypes: ["push"]
+    template:
+      spec:
+        resourceTemplates:
+        - apiVersion: tekton.dev/v1beta1
+          kind: PipelineRun
+          metadata:
+            generateName: resume-build-pipelinerun-
+          spec:
+            pipelineRef:
+              name: build-and-deploy-pipeline
+            params:
+              - name: gitUrl
+                value: ssh://git@github.com:Akurata/resume-website.git
+              - name: deploymentName
+                value: resume
+              - name: namespace
+                value: alex-resume-website
+              - name: imageUrl
+                value: registry.alexkurata.com/akurata/alex-resume-website
+              - name: imageTag
+                value: latest
+            serviceAccountName: pipeline-account
+            workspaces:
+              - name: git-source
+                volumeClaimTemplate:
+                  metadata:
+                    name: resume-build-pvc
+                  spec:
+                    accessModes: ["ReadWriteOnce"]
+                    resources:
+                      requests:
+                        storage: 5Gi
