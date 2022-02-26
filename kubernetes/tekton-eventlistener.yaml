@@ -7,11 +7,19 @@ spec:
   triggers:
   - name: github-listener
     interceptors:
-    - github:
-        eventTypes: ["push"]
+    - params:
+      - name: secretRef
+        value: null
+      - name: eventTypes
+        value:
+          - push
+          - pull_request
+      ref:
+        kind: ClusterInterceptor
+        name: github
     template:
       spec:
-        resourceTemplates:
+        resourcetemplates:
         - apiVersion: tekton.dev/v1beta1
           kind: PipelineRun
           metadata:
