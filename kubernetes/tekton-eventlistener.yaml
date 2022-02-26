@@ -25,6 +25,7 @@ spec:
           metadata:
             generateName: resume-build-pipelinerun-
           spec:
+            serviceAccountName: pipeline-account
             pipelineRef:
               name: build-and-deploy-pipeline
             params:
