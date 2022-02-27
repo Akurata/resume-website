@@ -3,7 +3,6 @@ kind: EventListener
 metadata:
   name: resume-git-event
 spec:
-  serviceAccountName: pipeline-account
   triggers:
   - name: github-listener
     interceptors:
