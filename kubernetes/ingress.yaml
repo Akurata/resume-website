@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: alexkurata.com
+    - host: home.alexkurata.com
       http:
         paths:
           - backend:
