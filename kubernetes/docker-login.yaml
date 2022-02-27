@@ -1,0 +1,17 @@
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: docker-login
+  namespace: alex-resume-website
+spec:
+  encryptedData:
+    .dockerconfigjson: AgCISXhnkpYZleuXvw0ZaIqkxVSR+RLiSz02pYWzGWeumO3giA7Xu5sCYMhWU+dOVQRYHz6IMmJOSKr3MLRLng4boiXZtDzXKVs0rQkJ2i9flyFa8PYi94RO8iWidztyr+Xj8WPVpTu9gPkDkdmk+KKB1WAgpRnEwhmrOmAiURKCLNb+bWFHtxeswAACMkD78+Xs/lTeWnG/lyDcQPLmLGKok8UbK5pUi7Y1Sf9Oy/HMQh3IOBtYelq90RaDmfrURoPRiX3a1DT3UdRnuuGlRV1skCTJzXqC/2kBZuuSSFF3xxDZncwrYYg89EEXyhpwO7D2VOBFSYnP+xYGkLoTW6v9onSIwHPfLvt9n5lURaiOS8szaEkKpCevoEjZWdjSuJKC5vxH7uSs7H7rTBXpzVo6vcvePuPxxJ3QTxdzv+iqCGthAvt9CJ8um0y8lWW+M1whFQpafdsW5SoDCLGwiCxkVoV7IjuMt0xpOk87ocel0aYDVxT23Iaej4h3pZ2vOj4mOaixPsjfGvoDqNdEoliScI+QTaF5qhzEcdNFbbWr6X6sfxxmabxTlLOA5pgV444hIimXQNyFvUClEkFsyb+JC4RoqRR2aCdflx4Vchzy2q2RMtYe7Vg+H0DYZPF9vlpTGxwQ4TL8FM4OrZ4jF/BVp6L9+8DjUzm+okcfi+F+Tl886UUAYZiSHhlDYc47N/I2T1oGbKBp1TTExiOAQOE5xrey7QoRhkwqUmnVJqJ4xMrsHIBiOHKsbyDx0jah+WKjrZIZvUZchIU2PV+/nRoXgEBfY0ryjI/uCcyxw0LZkFkrOxVlpZuPOTPa9I5BwhwUgkurkMC+U1qGn+2jUPxUBMCTfXBS99uXXcwNyMWBLS2KsBtjGxJNLHX/KuSTwEpR/o7rlSBhe/2W7BQMVbDYhVdGRhXJNhp7sMY1Vrgntgxq403x58tEtjde6m4/H9dGqyxZF+tezY7aWjYbmXEuaJMVHZQqbfukUgbEbIsZ7zWRlcjZCtynRiZXD9z/gzmTS20wXrgT5cGn9HFuNIZ64ocCGoceEXYxBzPFFOuPOu2sYMwhqAK1aLyqoj9fJEdZyJJquwQhgGI+tQhQQ+KsMb4eoQ0Royw=
+  template:
+    data: null
+    metadata:
+      creationTimestamp: null
+      name: docker-login
+      namespace: registry
+    type: kubernetes.io/dockerconfigjson
+
