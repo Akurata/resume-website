@@ -46,6 +46,7 @@ spec:
                     name: resume-build-pvc
                   spec:
                     accessModes: ["ReadWriteOnce"]
+                    storageClassName: storage-fs
                     resources:
                       requests:
                         storage: 5Gi
