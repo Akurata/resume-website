@@ -1,3 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+  name: alex-resume-website-ingress
+  namespace: tekton-pipelines
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: github.home.alexkurata.com
+      http:
+        paths:
+          - backend:
+              service:
+                name: el-resume-git-event
+                port:
+                  number: 8080
+            path: /
+            pathType: Prefix
+  tls:
+    - hosts:
+        - github.home.alexkurata.com
+      secretName: alex-resume-githook-tls
+---
 apiVersion: triggers.tekton.dev/v1alpha1
 kind: EventListener
 metadata:
