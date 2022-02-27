@@ -23,5 +23,5 @@ spec:
             pathType: Prefix
   tls:
     - hosts:
-        - alexkurata.com
+        - home.alexkurata.com
       secretName: alex-resume-tls
