@@ -11,7 +11,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: home.alexkurata.com
+    - host: alexkurata.com
       http:
         paths:
           - backend:
@@ -23,5 +23,5 @@ spec:
             pathType: Prefix
   tls:
     - hosts:
-        - home.alexkurata.com
+        - alexkurata.com
       secretName: alex-resume-tls
